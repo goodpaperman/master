@@ -1,0 +1,45 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: JuneWebServer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/JuneWebServer.res" /d "_DEBUG" /d "_AFXDLL" "D:\Master Visual C++ 6.0\11.chapter\Demo.02\JuneWebServer.rc"" 
+Creating temporary file "C:\Users\WANGLI~1\AppData\Local\Temp\RSPE54B.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Debug/JuneWebServer.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ    /c 
+"D:\Master Visual C++ 6.0\11.chapter\Demo.02\JuneWebServer.cpp"
+]
+Creating command line "cl.exe @C:\Users\WANGLI~1\AppData\Local\Temp\RSPE54B.tmp" 
+Creating temporary file "C:\Users\WANGLI~1\AppData\Local\Temp\RSPE54C.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Debug/JuneWebServer.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ    /c 
+"D:\Master Visual C++ 6.0\11.chapter\Demo.02\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\WANGLI~1\AppData\Local\Temp\RSPE54C.tmp" 
+Creating temporary file "C:\Users\WANGLI~1\AppData\Local\Temp\RSPE54D.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/JuneWebServer.pdb" /debug /machine:I386 /def:".\JuneWebServer.def" /out:"Debug/JuneWebServer.dll" /implib:"Debug/JuneWebServer.lib" /pdbtype:sept 
+".\Debug\JuneWebServer.obj"
+".\Debug\JuneWebServer.res"
+".\Debug\StdAfx.obj"
+]
+Creating command line "link.exe @C:\Users\WANGLI~1\AppData\Local\Temp\RSPE54D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+JuneWebServer.cpp
+Linking...
+   Creating library Debug/JuneWebServer.lib and object Debug/JuneWebServer.exp
+
+
+
+<h3>Results</h3>
+JuneWebServer.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

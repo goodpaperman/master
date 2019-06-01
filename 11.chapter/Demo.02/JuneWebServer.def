@@ -1,0 +1,10 @@
+; JUNEWEBSERVER.def : declares the module parameters for the DLL.
+
+LIBRARY	     "JUNEWEBSERVER"
+
+EXPORTS
+	HttpFilterProc
+	GetFilterVersion
+	HttpExtensionProc
+	GetExtensionVersion
+	TerminateExtension

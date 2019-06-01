@@ -1,0 +1,2 @@
+uninstall BeepService
+pause

@@ -1,0 +1,77 @@
+// JuneDrawing.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (JuneDrawing.tlb) that will become a resource in
+// JuneDrawing.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(833E85ED-235A-4782-A284-08D1FBEB9FCD), version(1.0),
+  helpfile("JuneDrawing.hlp"),
+  helpstring("JuneDrawing ActiveX Control module"),
+  control ]
+library JUNEDRAWINGLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CJuneDrawingCtrl
+
+	[ uuid(94265535-6FED-4F0A-878F-40B0A8ED465C),
+	  helpstring("Dispatch interface for JuneDrawing Control"), hidden ]
+	dispinterface _DJuneDrawing
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CJuneDrawingCtrl)
+			[id(DISPID_BACKCOLOR), bindable, requestedit] OLE_COLOR BackColor;
+			[id(1)] boolean DrawingShape;
+			[id(2)] OLE_COLOR FlashColor;
+			[id(DISPID_CAPTION), bindable, requestedit] BSTR Caption;
+			[id(DISPID_FONT), bindable] IFontDisp* Font;
+			[id(DISPID_FORECOLOR), bindable, requestedit] OLE_COLOR ForeColor;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CJuneDrawingCtrl)
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CJuneDrawingCtrl
+
+	[ uuid(F55227F5-CC4D-43C0-B2BD-A71EEC734B74),
+	  helpstring("Event interface for JuneDrawing Control") ]
+	dispinterface _DJuneDrawingEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CJuneDrawingCtrl)
+			[id(1)] void ClickIn(OLE_XPOS_PIXELS x, OLE_YPOS_PIXELS y);
+			[id(2)] void ClickOut();
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CJuneDrawingCtrl
+
+	[ uuid(B24E6CDD-2F0D-4419-8C35-D89BB6661971),
+	  helpstring("JuneDrawing Control"), control ]
+	coclass JuneDrawing
+	{
+		[default] dispinterface _DJuneDrawing;
+		[default, source] dispinterface _DJuneDrawingEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

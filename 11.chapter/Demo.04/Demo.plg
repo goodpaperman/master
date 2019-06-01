@@ -1,0 +1,26 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Demo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\WANGLI~1\AppData\Local\Temp\RSP5990.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Demo.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\MASTER VISUAL C++ 6.0\11.CHAPTER\Demo.04\DemoView.cpp"
+]
+Creating command line "cl.exe @C:\Users\WANGLI~1\AppData\Local\Temp\RSP5990.tmp" 
+<h3>Output Window</h3>
+Compiling...
+Skipping... (no relevant changes detected)
+DemoView.cpp
+
+
+
+<h3>Results</h3>
+DemoView.obj - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

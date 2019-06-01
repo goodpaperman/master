@@ -1,0 +1,2 @@
+install BeepService BeepService BeepService.exe
+pause
